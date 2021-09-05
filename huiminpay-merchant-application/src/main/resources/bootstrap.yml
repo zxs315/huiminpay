@@ -1,0 +1,20 @@
+server:
+  port: 57010
+spring:
+  application:
+    name: merchant-application
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 9ef2eddd-4820-4add-a0b3-29f9ae2f5a02
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        group: DEFAULT_GROUP
+        namespace: 9ef2eddd-4820-4add-a0b3-29f9ae2f5a02
+        ext‐config:
+        -
+          refresh: true
+          data‐id: spring-boot-http.yaml # spring boot http 配 置
+          group: COMMON_GROUP # 通用配置组
